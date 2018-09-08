@@ -1,0 +1,17 @@
+#set( $attributes = $ctx.args.input )
+$util.qr($attributes.put("owner", $util.defaultIfNullOrBlank($attributes.owner, $context.identity.username)))
+
+{
+  "version": "2017-02-28",
+  "operation": "PutItem",
+  "key": {
+    "id": $util.dynamodb.toDynamoDBJson($attributes.id),
+  },
+  "attributeValues": $util.dynamodb.toMapValuesJson($attributes),
+  "condition": {
+    "expression": "attribute_not_exists(#id)",
+    "expressionNames": {
+      "#id": "id",
+    },
+  },
+}

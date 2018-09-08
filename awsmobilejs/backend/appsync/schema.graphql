@@ -1,0 +1,328 @@
+type Business
+{
+id: ID!
+creator: User
+name: String
+email: String
+website: String
+bio: String
+phone: String
+verifiedBusiness: Boolean
+}
+
+type BusinessConnection
+{
+items: [Business]
+nextToken: String
+}
+
+type Client
+{
+id: ID
+creator: User
+email: String
+phone: String
+firstName: String
+middleName: String
+lastName: String
+user: User
+pets: [Pet]
+}
+
+type ClientConnection
+{
+items: [Client]
+nextToken: String
+}
+
+input CreateBusinessInput
+{
+id: ID!
+name: String
+email: String
+website: String
+bio: String
+phone: String
+verifiedBusiness: Boolean
+owner: ID}
+
+input CreateClientInput
+{
+id: ID!
+email: String
+phone: String
+firstName: String
+middleName: String
+lastName: String}
+
+input CreatePetInput
+{
+id: ID!
+name: String
+species: String
+breed: String
+dateOfBirth: String
+owner: ID}
+
+input CreateReacordInput
+{
+id: ID!
+isMedical: Boolean
+notes: String
+diagnosis: String
+treatment: String
+amount: Float
+currency: String}
+
+input CreateSpeciesInput
+{
+id: ID!
+name: String
+breeds: [String]}
+
+input CreateUserInput
+{
+id: ID
+email: String
+phone: String
+firstName: String
+middleName: String
+lastName: String
+gender: String
+dateOfBirth: String
+status: String}
+
+input DeleteBusinessInput
+{
+id: ID!}
+
+input DeleteClientInput
+{
+id: ID!}
+
+input DeletePetInput
+{
+id: ID!}
+
+input DeleteReacordInput
+{
+id: ID!}
+
+input DeleteSpeciesInput
+{
+id: ID!}
+
+input DeleteUserInput
+{
+id: ID!}
+
+type Mutation
+{
+createUser(input: CreateUserInput! ): User
+updateUser(input: UpdateUserInput! ): User
+deleteUser(input: DeleteUserInput! ): User
+createBusiness(input: CreateBusinessInput! ): Business
+updateBusiness(input: UpdateBusinessInput! ): Business
+deleteBusiness(input: DeleteBusinessInput! ): Business
+createPet(input: CreatePetInput! ): Pet
+updatePet(input: UpdatePetInput! ): Pet
+deletePet(input: DeletePetInput! ): Pet
+createSpecies(input: CreateSpeciesInput! ): Species
+updateSpecies(input: UpdateSpeciesInput! ): Species
+deleteSpecies(input: DeleteSpeciesInput! ): Species
+createClient(input: CreateClientInput! ): Client
+updateClient(input: UpdateClientInput! ): Client
+deleteClient(input: DeleteClientInput! ): Client
+createReacord(input: CreateReacordInput! ): Reacord
+updateReacord(input: UpdateReacordInput! ): Reacord
+deleteReacord(input: DeleteReacordInput! ): Reacord
+}
+
+type Pet
+{
+id: ID!
+creator: User
+owner: User
+name: String
+species: String
+breed: String
+dateOfBirth: String
+}
+
+type PetConnection
+{
+items: [Pet]
+nextToken: String
+}
+
+type Query
+{
+me: User
+getUser(id: ID! ): User
+listUsers(first: Int,after: String ): UserConnection
+getBusiness(id: ID! ): Business
+listBusinesses(first: Int,after: String ): BusinessConnection
+getPet(id: ID! ): Pet
+listPets(first: Int,after: String ): PetConnection
+getSpecies(id: ID! ): Species
+listSpecies(first: Int,after: String ): SpeciesConnection
+getClient(id: ID! ): Client
+listClients(first: Int,after: String ): ClientConnection
+getReacord(id: ID! ): Reacord
+listReacords(first: Int,after: String ): ReacordConnection
+}
+
+type Reacord
+{
+id: ID
+creator: User
+business: Business
+pet: Pet
+isMedical: Boolean
+notes: String
+diagnosis: String
+treatment: String
+amount: Float
+currency: String
+}
+
+type ReacordConnection
+{
+items: [Reacord]
+nextToken: String
+}
+
+type Species
+{
+id: ID!
+name: String
+breeds: [String]
+}
+
+type SpeciesConnection
+{
+items: [Species]
+nextToken: String
+}
+
+type Subscription
+{
+onCreateUser(id: ID,email: String,firstName: String,middleName: String,lastName: String ): User
+@aws_subscribe(mutations: ["createUser"])
+onUpdateUser(id: ID,email: String,firstName: String,middleName: String,lastName: String ): User
+@aws_subscribe(mutations: ["updateUser"])
+onDeleteUser(id: ID,email: String,firstName: String,middleName: String,lastName: String ): User
+@aws_subscribe(mutations: ["deleteUser"])
+onCreateBusiness(id: ID,name: String,email: String,website: String,bio: String ): Business
+@aws_subscribe(mutations: ["createBusiness"])
+onUpdateBusiness(id: ID,name: String,email: String,website: String,bio: String ): Business
+@aws_subscribe(mutations: ["updateBusiness"])
+onDeleteBusiness(id: ID,name: String,email: String,website: String,bio: String ): Business
+@aws_subscribe(mutations: ["deleteBusiness"])
+onCreatePet(id: ID,name: String,species: String,breed: String,dateOfBirth: String ): Pet
+@aws_subscribe(mutations: ["createPet"])
+onUpdatePet(id: ID,name: String,species: String,breed: String,dateOfBirth: String ): Pet
+@aws_subscribe(mutations: ["updatePet"])
+onDeletePet(id: ID,name: String,species: String,breed: String,dateOfBirth: String ): Pet
+@aws_subscribe(mutations: ["deletePet"])
+onCreateSpecies(id: ID,name: String,breeds: [String] ): Species
+@aws_subscribe(mutations: ["createSpecies"])
+onUpdateSpecies(id: ID,name: String,breeds: [String] ): Species
+@aws_subscribe(mutations: ["updateSpecies"])
+onDeleteSpecies(id: ID,name: String,breeds: [String] ): Species
+@aws_subscribe(mutations: ["deleteSpecies"])
+onCreateClient(id: ID,email: String,phone: String,firstName: String,middleName: String ): Client
+@aws_subscribe(mutations: ["createClient"])
+onUpdateClient(id: ID,email: String,phone: String,firstName: String,middleName: String ): Client
+@aws_subscribe(mutations: ["updateClient"])
+onDeleteClient(id: ID,email: String,phone: String,firstName: String,middleName: String ): Client
+@aws_subscribe(mutations: ["deleteClient"])
+onCreateReacord(id: ID,isMedical: Boolean,notes: String,diagnosis: String,treatment: String ): Reacord
+@aws_subscribe(mutations: ["createReacord"])
+onUpdateReacord(id: ID,isMedical: Boolean,notes: String,diagnosis: String,treatment: String ): Reacord
+@aws_subscribe(mutations: ["updateReacord"])
+onDeleteReacord(id: ID,isMedical: Boolean,notes: String,diagnosis: String,treatment: String ): Reacord
+@aws_subscribe(mutations: ["deleteReacord"])
+}
+
+input UpdateBusinessInput
+{
+id: ID!
+name: String
+email: String
+website: String
+bio: String
+phone: String
+verifiedBusiness: Boolean}
+
+input UpdateClientInput
+{
+id: ID!
+email: String
+phone: String
+firstName: String
+middleName: String
+lastName: String}
+
+input UpdatePetInput
+{
+id: ID!
+name: String
+species: String
+breed: String
+dateOfBirth: String}
+
+input UpdateReacordInput
+{
+id: ID!
+isMedical: Boolean
+notes: String
+diagnosis: String
+treatment: String
+amount: Float
+currency: String}
+
+input UpdateSpeciesInput
+{
+id: ID!
+name: String
+breeds: [String]}
+
+input UpdateUserInput
+{
+id: ID!
+email: String
+firstName: String
+middleName: String
+lastName: String
+dateOfBirth: String
+status: String}
+
+type User
+{
+id: ID!
+email: String
+phone: String
+firstName: String
+middleName: String
+lastName: String
+gender: String
+dateOfBirth: String
+status: String
+business: Business
+pets: PetConnection
+clientInfo: Client
+}
+
+type UserConnection
+{
+items: [User]
+nextToken: String
+}
+
+schema 
+{
+query: Query
+mutation: Mutation
+subscription: Subscription
+}

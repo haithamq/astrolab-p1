@@ -1,0 +1,192 @@
+{
+    "dataSources": [
+        {
+            "name": "easylendBusinessTable",
+            "description": "DataSource for Amazon DynamoDB table easylendBusinessTable (arn:aws:dynamodb:us-west-2:123456789012:table/easylendBusinessTable)",
+            "type": "AMAZON_DYNAMODB",
+            "serviceRoleArn": "{managed-by-awsmobile-cli}",
+            "dynamodbConfig": {
+                "tableName": "easylendBusinessTable",
+                "awsRegion": "us-west-2",
+                "useCallerCredentials": false
+            }
+        },
+        {
+            "name": "easylendClientTable",
+            "description": "DataSource for Amazon DynamoDB table easylendClientTable (arn:aws:dynamodb:us-west-2:123456789012:table/easylendClientTable)",
+            "type": "AMAZON_DYNAMODB",
+            "serviceRoleArn": "{managed-by-awsmobile-cli}",
+            "dynamodbConfig": {
+                "tableName": "easylendClientTable",
+                "awsRegion": "us-west-2",
+                "useCallerCredentials": false
+            }
+        },
+        {
+            "name": "easylendTable",
+            "description": "DataSource for Amazon DynamoDB table easylendTable (arn:aws:dynamodb:us-west-2:123456789012:table/easylendTable)",
+            "type": "AMAZON_DYNAMODB",
+            "serviceRoleArn": "{managed-by-awsmobile-cli}",
+            "dynamodbConfig": {
+                "tableName": "easylendTable",
+                "awsRegion": "us-west-2",
+                "useCallerCredentials": false
+            }
+        },
+        {
+            "name": "easylendReacordTable",
+            "description": "DataSource for Amazon DynamoDB table easylendReacordTable (arn:aws:dynamodb:us-west-2:123456789012:table/easylendReacordTable)",
+            "type": "AMAZON_DYNAMODB",
+            "serviceRoleArn": "{managed-by-awsmobile-cli}",
+            "dynamodbConfig": {
+                "tableName": "easylendReacordTable",
+                "awsRegion": "us-west-2",
+                "useCallerCredentials": false
+            }
+        },
+        {
+            "name": "easylendSpeciesTable",
+            "description": "DataSource for Amazon DynamoDB table easylendSpeciesTable (arn:aws:dynamodb:us-west-2:123456789012:table/easylendSpeciesTable)",
+            "type": "AMAZON_DYNAMODB",
+            "serviceRoleArn": "{managed-by-awsmobile-cli}",
+            "dynamodbConfig": {
+                "tableName": "easylendSpeciesTable",
+                "awsRegion": "us-west-2",
+                "useCallerCredentials": false
+            }
+        },
+        {
+            "name": "easylendUserTable",
+            "description": "DataSource for Amazon DynamoDB table easylendUserTable (arn:aws:dynamodb:us-west-2:123456789012:table/easylendUserTable)",
+            "type": "AMAZON_DYNAMODB",
+            "serviceRoleArn": "{managed-by-awsmobile-cli}",
+            "dynamodbConfig": {
+                "tableName": "easylendUserTable",
+                "awsRegion": "us-west-2",
+                "useCallerCredentials": false
+            }
+        }
+    ],
+    "tables": [
+        {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                }
+            ],
+            "TableName": "easylendBusinessTable",
+            "KeySchema": [
+                {
+                    "AttributeName": "id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "ProvisionedThroughput": {
+                "ReadCapacityUnits": 5,
+                "WriteCapacityUnits": 5
+            },
+            "Region": "us-west-2"
+        },
+        {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                }
+            ],
+            "TableName": "easylendClientTable",
+            "KeySchema": [
+                {
+                    "AttributeName": "id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "ProvisionedThroughput": {
+                "ReadCapacityUnits": 5,
+                "WriteCapacityUnits": 5
+            },
+            "Region": "us-west-2"
+        },
+        {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                }
+            ],
+            "TableName": "easylendTable",
+            "KeySchema": [
+                {
+                    "AttributeName": "id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "ProvisionedThroughput": {
+                "ReadCapacityUnits": 5,
+                "WriteCapacityUnits": 5
+            },
+            "Region": "us-west-2"
+        },
+        {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                }
+            ],
+            "TableName": "easylendReacordTable",
+            "KeySchema": [
+                {
+                    "AttributeName": "id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "ProvisionedThroughput": {
+                "ReadCapacityUnits": 5,
+                "WriteCapacityUnits": 5
+            },
+            "Region": "us-west-2"
+        },
+        {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                }
+            ],
+            "TableName": "easylendSpeciesTable",
+            "KeySchema": [
+                {
+                    "AttributeName": "id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "ProvisionedThroughput": {
+                "ReadCapacityUnits": 5,
+                "WriteCapacityUnits": 5
+            },
+            "Region": "us-west-2"
+        },
+        {
+            "AttributeDefinitions": [
+                {
+                    "AttributeName": "id",
+                    "AttributeType": "S"
+                }
+            ],
+            "TableName": "easylendUserTable",
+            "KeySchema": [
+                {
+                    "AttributeName": "id",
+                    "KeyType": "HASH"
+                }
+            ],
+            "ProvisionedThroughput": {
+                "ReadCapacityUnits": 5,
+                "WriteCapacityUnits": 5
+            },
+            "Region": "us-west-2"
+        }
+    ]
+}

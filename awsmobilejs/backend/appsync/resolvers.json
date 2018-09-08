@@ -1,0 +1,233 @@
+[
+    {
+        "typeName": "Mutation",
+        "fieldName": "createBusiness",
+        "dataSourceName": "easylendBusinessTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.createBusiness.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.createBusiness.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "createClient",
+        "dataSourceName": "easylendClientTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.createClient.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.createClient.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "createPet",
+        "dataSourceName": "easylendPetTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.createPet.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.createPet.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "createReacord",
+        "dataSourceName": "easylendReacordTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.createReacord.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.createReacord.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "createSpecies",
+        "dataSourceName": "easylendSpeciesTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.createSpecies.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.createSpecies.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "createUser",
+        "dataSourceName": "easylendUserTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.createUser.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.createUser.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "deleteBusiness",
+        "dataSourceName": "easylendBusinessTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.deleteBusiness.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.deleteBusiness.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "deleteClient",
+        "dataSourceName": "easylendClientTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.deleteClient.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.deleteClient.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "deletePet",
+        "dataSourceName": "easylendPetTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.deletePet.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.deletePet.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "deleteReacord",
+        "dataSourceName": "easylendReacordTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.deleteReacord.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.deleteReacord.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "deleteSpecies",
+        "dataSourceName": "easylendSpeciesTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.deleteSpecies.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.deleteSpecies.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "deleteUser",
+        "dataSourceName": "easylendUserTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.deleteUser.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.deleteUser.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "updateBusiness",
+        "dataSourceName": "easylendBusinessTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.updateBusiness.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.updateBusiness.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "updateClient",
+        "dataSourceName": "easylendClientTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.updateClient.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.updateClient.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "updatePet",
+        "dataSourceName": "easylendPetTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.updatePet.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.updatePet.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "updateReacord",
+        "dataSourceName": "easylendReacordTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.updateReacord.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.updateReacord.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "updateSpecies",
+        "dataSourceName": "easylendSpeciesTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.updateSpecies.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.updateSpecies.response"
+    },
+    {
+        "typeName": "Mutation",
+        "fieldName": "updateUser",
+        "dataSourceName": "easylendUserTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.updateUser.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Mutation.updateUser.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "getBusiness",
+        "dataSourceName": "easylendBusinessTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.getBusiness.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.getBusiness.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "getClient",
+        "dataSourceName": "easylendClientTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.getClient.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.getClient.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "getPet",
+        "dataSourceName": "easylendPetTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.getPet.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.getPet.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "getReacord",
+        "dataSourceName": "easylendReacordTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.getReacord.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.getReacord.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "getSpecies",
+        "dataSourceName": "easylendSpeciesTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.getSpecies.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.getSpecies.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "getUser",
+        "dataSourceName": "easylendUserTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.getUser.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.getUser.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "listBusinesses",
+        "dataSourceName": "easylendBusinessTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.listBusinesses.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.listBusinesses.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "listClients",
+        "dataSourceName": "easylendClientTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.listClients.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.listClients.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "listPets",
+        "dataSourceName": "easylendPetTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.listPets.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.listPets.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "listReacords",
+        "dataSourceName": "easylendReacordTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.listReacords.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.listReacords.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "listSpecies",
+        "dataSourceName": "easylendSpeciesTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.listSpecies.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.listSpecies.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "listUsers",
+        "dataSourceName": "easylendUserTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.listUsers.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.listUsers.response"
+    },
+    {
+        "typeName": "Query",
+        "fieldName": "me",
+        "dataSourceName": "easylendUserTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:Query.me.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:Query.me.response"
+    },
+    {
+        "typeName": "User",
+        "fieldName": "business",
+        "dataSourceName": "easylendBusinessTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:User.business.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:User.business.response"
+    },
+    {
+        "typeName": "User",
+        "fieldName": "pets",
+        "dataSourceName": "easylendPetTable",
+        "requestMappingTemplate": "{managed-by-awsmobile-cli}:User.pets.request",
+        "responseMappingTemplate": "{managed-by-awsmobile-cli}:User.pets.response"
+    }
+]

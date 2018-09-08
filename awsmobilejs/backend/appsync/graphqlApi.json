@@ -1,0 +1,14 @@
+{
+    "name": "easylend",
+    "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+    "logConfig": {
+        "fieldLogLevel": "ERROR",
+        "cloudWatchLogsRoleArn": "arn:aws:iam::552986861933:role/service-role/appsync-graphqlapi-logs-us-west-2"
+    },
+    "userPoolConfig": {
+        "userPoolId": "us-west-2_OE0i7c1dQ",
+        "awsRegion": "us-west-2",
+        "defaultAction": "ALLOW",
+        "appIdClientRegex": null
+    }
+}
